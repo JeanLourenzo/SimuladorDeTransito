@@ -1,0 +1,22 @@
+#pragma once
+
+class Veiculos {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+};

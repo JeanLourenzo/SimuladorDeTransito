@@ -6,26 +6,23 @@
 #include "Carro.h"
 #include "Caminhao.h"
 #include "Windows.h"
-#include <stdio.h>
 
 
 using namespace std;
 
+void Movimentar(int x, int y)
+{
+	COORD xy = { x + 10,y + 10 };
 
-void MoveToXY(int x, int y);
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), xy);
+}
 
-int main() {
-
-	std::random_device random;
-	std::mt19937 engine(random());
-	std::uniform_int_distribution<> xr(3, 57);
-	std::uniform_int_distribution<> yr(3, 27);
-
+void imprimeMapa() {
 	int i, j;
 
-	int mapa[30][60] =
+	int mapa[30][60] = // 0 = Nada   1 = Barreira    2 = Fábrica
 
-  { { 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1 },
+	{ { 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1 },
 	{ 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1 },
 	{ 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1 },
 	{ 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1 },
@@ -57,48 +54,115 @@ int main() {
 	{ 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1 } };
 
 
+	for (i = 0; i < 60; i++) {
+		for (j = 0; j < 30; j++) {
+
+			if (mapa[j][i] == 1)
+			{
+				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 50);
+				Movimentar(i, j);
+				cout << " ";
+			}
+
+			if (mapa[j][i] == 2)
+			{
+				SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 110);
+				Movimentar(i, j);
+				cout << " ";
+			}
+		}
+	}
+}
+
+
+int main() {
+
+	// Usando a biblioteca random, por que o rand() é uma porcaria.
+	std::random_device numero;
+	std::mt19937 eng(numero());
+
+	std::uniform_int_distribution<> xinicial(3, 57);
+	std::uniform_int_distribution<> yinicial(3, 27);
+
+	std::uniform_int_distribution<> xr(1, 3);
+	std::uniform_int_distribution<> yr(1, 3);
+
 	vector<Carro> cx;
 	vector<Caminhao> camx;
 	vector<Moto> mx;
 
-	
-		for (i = 0; i < 60; i++) {
-			for (j = 0; j < 30; j++) {
+	int i, infinito = 8;
 
 
-				if (mapa[j][i] == 1)
-				{
-					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 50);
-					MoveToXY(i, j);
-					cout << " ";
-					
-				}
-				
-				if (mapa[j][i] == 2)
-				{
-					SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 110);
-					MoveToXY(i, j);
-					cout << " ";
-					
-				}
-
-
-			}
-		}
-
-		MoveToXY(i+4, j+5);
-
-		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
-		cout << "\n\n";
-
-		system("Pause");
-		return 0;
+	// Criando 10 Carros,
+	for (i = 0; i < 1; i++) {
+		cx.push_back(Carro(xinicial(eng), yinicial(eng)));
 	}
 
-void MoveToXY(int x, int y)
-{
-	COORD coord = { x+10,y+10};
+	while (infinito == 8) {
 
-	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+		imprimeMapa();
 
-}
+		// Update da Movimentação dos Carros.
+		for (i = 0; i < cx.size(); i++) {
+
+			if (xr(eng) == 1) {
+				cx[i].setX(cx[i].x - 1);
+			}
+
+			if (xr(eng) == 3) {
+				cx[i].setX(cx[i].x + 1);
+			}
+
+			if (yr(eng) == 1) {
+				cx[i].setY(cx[i].y - 1);
+			}
+
+			if (yr(eng) == 3) {
+				cx[i].setY(cx[i].y + 1);
+			}
+
+			cx[i].Movimentar(cx[i].getX(), cx[i].getY());
+			std::cout << " ";
+		}
+
+		// Colisor Barreiras
+
+		for (i = 0; i < cx.size(); i++) {
+
+			if (cx[i].getY() == 29) {
+				cx[i].setY(2);
+			}
+
+			if (cx[i].getY() == 1) {
+				cx[i].setY(28);
+			}
+
+			if (cx[i].getX() == 1) {
+				cx[i].setX(58);
+			}
+
+			if (cx[i].getX() == 59) {
+				cx[i].setX(2);
+			}
+
+		}
+
+
+
+
+			// Deixar a mensagem "Pressione qualquer tecla para continuar.." na parte inferior do prompt.
+			Movimentar(65, 35);
+			SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
+			cout << "\n";
+
+			system("Pause");
+			system("CLS");
+
+		}
+
+		return 0;
+
+	}
+
+

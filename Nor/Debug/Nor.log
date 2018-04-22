@@ -1,3 +1,7 @@
 ﻿  Main.cpp
-d:\jogos\c++\console\nor\nor\main.cpp(100): warning C4838: a conversão de 'int' em 'SHORT' requer uma conversão de restrição
+d:\jogos\c++\console\nor\nor\carro.h(42): warning C4838: a conversão de 'int' em 'SHORT' requer uma conversão de restrição
+d:\jogos\c++\console\nor\nor\veiculos.h(22): warning C4838: a conversão de 'int' em 'SHORT' requer uma conversão de restrição
+d:\jogos\c++\console\nor\nor\main.cpp(15): warning C4838: a conversão de 'int' em 'SHORT' requer uma conversão de restrição
+d:\jogos\c++\console\nor\nor\main.cpp(107): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(131): warning C4018: '<': incompatibilidade de signed/unsigned
   Nor.vcxproj -> D:\Jogos\C++\Console\Nor\Debug\Nor.exe

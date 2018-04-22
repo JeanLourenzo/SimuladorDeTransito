@@ -2,7 +2,7 @@
 
 #include "Veiculos.h"
 
-class Moto : public Veiculos {
+class Moto  {
 
 
 

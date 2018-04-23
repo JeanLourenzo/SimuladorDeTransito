@@ -120,6 +120,7 @@
   <ItemGroup>
     <ClInclude Include="Caminhao.h" />
     <ClInclude Include="Carro.h" />
+    <ClInclude Include="Mapa.h" />
     <ClInclude Include="Moto.h" />
     <ClInclude Include="Veiculos.h" />
   </ItemGroup>

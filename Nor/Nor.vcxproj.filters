@@ -32,5 +32,8 @@
     <ClInclude Include="Caminhao.h">
       <Filter>Arquivos de Recurso</Filter>
     </ClInclude>
+    <ClInclude Include="Mapa.h">
+      <Filter>Arquivos de Recurso</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

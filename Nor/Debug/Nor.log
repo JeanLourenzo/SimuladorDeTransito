@@ -1,7 +1,14 @@
 ﻿  Main.cpp
-d:\jogos\c++\console\nor\nor\carro.h(42): warning C4838: a conversão de 'int' em 'SHORT' requer uma conversão de restrição
-d:\jogos\c++\console\nor\nor\veiculos.h(22): warning C4838: a conversão de 'int' em 'SHORT' requer uma conversão de restrição
-d:\jogos\c++\console\nor\nor\main.cpp(15): warning C4838: a conversão de 'int' em 'SHORT' requer uma conversão de restrição
+d:\jogos\c++\console\nor\nor\veiculos.h(38): warning C4838: a conversão de 'int' em 'SHORT' requer uma conversão de restrição
+d:\jogos\c++\console\nor\nor\mapa.h(16): warning C4838: a conversão de 'int' em 'SHORT' requer uma conversão de restrição
+d:\jogos\c++\console\nor\nor\main.cpp(56): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(62): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(69): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(76): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(80): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(84): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(89): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(98): warning C4018: '<': incompatibilidade de signed/unsigned
 d:\jogos\c++\console\nor\nor\main.cpp(107): warning C4018: '<': incompatibilidade de signed/unsigned
-d:\jogos\c++\console\nor\nor\main.cpp(131): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\veiculos.h(107): warning C4715: 'Veiculos::colisorFabrica': nem todos os caminhos de controle retornam um valor
   Nor.vcxproj -> D:\Jogos\C++\Console\Nor\Debug\Nor.exe

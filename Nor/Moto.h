@@ -1,13 +1,15 @@
 #pragma once
 
-#include "Veiculos.h"
+class Moto : public Veiculos  {
 
-class Moto  {
+public:
 
-
-
-
+	Moto(int x, int y) : Veiculos (x,y) {
 
 
+		Movimentar(x, y);
+		std::cout << " ";
+
+	}
 
 };

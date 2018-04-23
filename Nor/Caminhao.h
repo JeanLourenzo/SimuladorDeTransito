@@ -1,18 +1,15 @@
 #pragma once
 
-#include "Veiculos.h"
+class Caminhao : public Veiculos {
 
-class Caminhao {
-
-
+public:
 	
+	Caminhao(int x, int y) : Veiculos (x,y) {
+		
 
+		Movimentar(x, y);
+		std::cout << " ";
 
-
-
-
-
-
-
-
+	}
+	
 };

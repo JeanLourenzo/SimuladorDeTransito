@@ -3,6 +3,7 @@
 #include <iostream>
 #include <Windows.h>
 
+
 class Mapa {
 
 public:
@@ -10,7 +11,7 @@ public:
 	Mapa() {
 
 	}
-
+	// Função para movimentar coordenadas.
 	void Movimentar(int x, int y)
 	{
 		COORD xy = { x + 10,y + 10 };
@@ -18,7 +19,7 @@ public:
 		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), xy);
 	}
 
-	
+	// Imprimindo o mapa no prompt
 	void imprimeMapa() {
 
 		int mapa[30][60] = // 0 = Nada   1 = Barreira    2 = Fábrica
@@ -76,9 +77,9 @@ public:
 		}
 	}
 
+	// Deixar a mensagem "Pressione qualquer tecla para continuar.." na parte inferior do prompt.
 	void msgFinal() {
 
-		// Deixar a mensagem "Pressione qualquer tecla para continuar.." na parte inferior do prompt.
 		Movimentar(65, 35);
 		SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), 15);
 		std::cout << "\n";

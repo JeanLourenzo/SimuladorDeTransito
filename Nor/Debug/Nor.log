@@ -1,14 +1,30 @@
 ﻿  Main.cpp
-d:\jogos\c++\console\nor\nor\veiculos.h(38): warning C4838: a conversão de 'int' em 'SHORT' requer uma conversão de restrição
-d:\jogos\c++\console\nor\nor\mapa.h(16): warning C4838: a conversão de 'int' em 'SHORT' requer uma conversão de restrição
-d:\jogos\c++\console\nor\nor\main.cpp(56): warning C4018: '<': incompatibilidade de signed/unsigned
-d:\jogos\c++\console\nor\nor\main.cpp(62): warning C4018: '<': incompatibilidade de signed/unsigned
-d:\jogos\c++\console\nor\nor\main.cpp(69): warning C4018: '<': incompatibilidade de signed/unsigned
-d:\jogos\c++\console\nor\nor\main.cpp(76): warning C4018: '<': incompatibilidade de signed/unsigned
-d:\jogos\c++\console\nor\nor\main.cpp(80): warning C4018: '<': incompatibilidade de signed/unsigned
-d:\jogos\c++\console\nor\nor\main.cpp(84): warning C4018: '<': incompatibilidade de signed/unsigned
-d:\jogos\c++\console\nor\nor\main.cpp(89): warning C4018: '<': incompatibilidade de signed/unsigned
-d:\jogos\c++\console\nor\nor\main.cpp(98): warning C4018: '<': incompatibilidade de signed/unsigned
-d:\jogos\c++\console\nor\nor\main.cpp(107): warning C4018: '<': incompatibilidade de signed/unsigned
-d:\jogos\c++\console\nor\nor\veiculos.h(107): warning C4715: 'Veiculos::colisorFabrica': nem todos os caminhos de controle retornam um valor
+d:\jogos\c++\console\nor\nor\veiculos.h(43): warning C4838: a conversão de 'int' em 'SHORT' requer uma conversão de restrição
+d:\jogos\c++\console\nor\nor\mapa.h(17): warning C4838: a conversão de 'int' em 'SHORT' requer uma conversão de restrição
+d:\jogos\c++\console\nor\nor\main.cpp(22): warning C4838: a conversão de 'int' em 'SHORT' requer uma conversão de restrição
+d:\jogos\c++\console\nor\nor\main.cpp(91): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(103): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(117): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(128): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(142): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(153): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(164): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(168): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(172): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(177): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(186): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(195): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(205): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(206): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(221): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(222): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(236): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(237): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(251): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(252): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(275): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(276): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(299): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\main.cpp(300): warning C4018: '<': incompatibilidade de signed/unsigned
+d:\jogos\c++\console\nor\nor\veiculos.h(199): warning C4715: 'Veiculos::ColisorFabrica': nem todos os caminhos de controle retornam um valor
   Nor.vcxproj -> D:\Jogos\C++\Console\Nor\Debug\Nor.exe
